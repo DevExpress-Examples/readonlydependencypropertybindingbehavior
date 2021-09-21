@@ -5,7 +5,7 @@
 <!-- default badges end -->
 # WPF MVVM Behaviors - Bind Read-Only Properties to ViewModel's Properties with ReadOnlyDependencyPropertyBindingBehavior
 
-The [ReadOnlyDependencyPropertyBindingBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.ReadOnlyDependencyPropertyBindingBehavior) allows you to bind read-only dependency and attached properties to a ViewModel's properties.
+The [ReadOnlyDependencyPropertyBindingBehavior](https://docs.devexpress.com/WPF/DevExpress.Mvvm.UI.ReadOnlyDependencyPropertyBindingBehavior) allows you to bind read-only dependency and attached properties to a ViewModel's properties. 
 
 This code sample binds the [TreeView.SelectedItemProperty](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.treeview.selecteditem) read-only dependency property to the ViewModel’s **SelectedMenuItem** property.
 
