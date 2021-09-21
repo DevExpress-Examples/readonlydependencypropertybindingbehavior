@@ -14,11 +14,9 @@
     </UserControl.DataContext>
 
     <DockPanel>
-        <TreeView Name="view"
-                  ItemsSource="{Binding Menu}">
+        <TreeView Name="view" ItemsSource="{Binding Menu}">
             <TreeView.Resources>
-                <HierarchicalDataTemplate DataType="{x:Type ViewModels:MenuItemViewModel}"
-                                          ItemsSource="{Binding Items}">
+                <HierarchicalDataTemplate DataType="{x:Type ViewModels:MenuItemViewModel}" ItemsSource="{Binding Items}">
                     <TextBlock Text="{Binding Title}" />
                 </HierarchicalDataTemplate>
             </TreeView.Resources>

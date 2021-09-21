@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
+using System.Windows;
 using DevExpress.Mvvm;
+using DevExpress.Mvvm.DataAnnotations;
 
-namespace DXSample.ViewModels {
+namespace DXSample.ViewModels
+{
     public class MainViewModel : ViewModelBase {
         public MenuItemViewModel SelectedMenuItem {
             get { return GetProperty(() => SelectedMenuItem); }
             set { SetProperty(() => SelectedMenuItem, value); }
+        }
+
+        [Command]
+        public void Open() {
+            MessageBox.Show(SelectedMenuItem.Title);
         }
 
         public ObservableCollection<MenuItemViewModel> Menu {
@@ -25,7 +32,7 @@ namespace DXSample.ViewModels {
                             Items = new ObservableCollection<MenuItemViewModel>() {
                                 new MenuItemViewModel() { Title = "Sub Item 121" },
                                 new MenuItemViewModel() { Title = "Sub Item 122" },
-                            }                           
+                            }
                         },
                         new MenuItemViewModel() { Title = "Sub Item 13" },
                     }
@@ -40,6 +47,6 @@ namespace DXSample.ViewModels {
                 }
 
             };
-        }       
+        }
     }
 }
