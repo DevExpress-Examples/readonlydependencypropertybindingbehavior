@@ -1,5 +1,3 @@
-Imports System
-Imports System.Linq
 Imports System.Windows.Controls
 
 Namespace DXSample.Views
@@ -11,7 +9,7 @@ Namespace DXSample.Views
         Inherits UserControl
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace

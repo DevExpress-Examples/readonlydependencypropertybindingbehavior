@@ -1,5 +1,3 @@
-Imports System
-Imports System.Linq
 Imports DevExpress.Xpf.Core
 
 Namespace DXSample
@@ -11,7 +9,7 @@ Namespace DXSample
         Inherits ThemedWindow
 
         Public Sub New()
-            InitializeComponent()
+            Me.InitializeComponent()
         End Sub
     End Class
 End Namespace
